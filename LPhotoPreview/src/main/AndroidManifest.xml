@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jielkko.lphotopreview">
+
+    <application>
+        <activity
+            android:name=".weixin.PhotoDragActivity"
+            android:theme="@style/PhotoPreviewSlideCloseTheme"></activity>
+        <activity
+            android:name=".test.PhotoTestActivity"
+            android:theme="@style/PhotoPreviewSlideCloseTheme" />
+
+        <activity
+            android:name=".test.SlideCloseActivity"
+            android:theme="@style/PhotoPreviewSlideCloseTheme" />
+        <activity
+            android:name=".toutiao.PhotoTouTiaoActivity"
+            android:theme="@style/PhotoPreviewSlideCloseTheme" />
+    </application>
+</manifest>

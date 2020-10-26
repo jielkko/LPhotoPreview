@@ -1,0 +1,3 @@
+include ':LPhotoPreview'
+include ':app'
+rootProject.name = "PhotoPreview"
