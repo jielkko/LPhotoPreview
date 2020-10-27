@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
 
-group='com.github.jielkko'
+//group='com.github.jielkko'
+group='com.gitee.jielkko'
 
 android {
     compileSdkVersion 28
