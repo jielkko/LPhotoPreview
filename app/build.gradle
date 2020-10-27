@@ -48,5 +48,5 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
 
     //implementation project(':LPhotoPreview')
-    implementation 'com.gitee.jielkko:lphotopreview:1.0'
+    implementation 'com.github.jielkko:LPhotoPreview:1.0'
 }
