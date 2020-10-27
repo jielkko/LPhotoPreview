@@ -4,6 +4,18 @@
 #### 介绍
 仿微信仿头条图片预览
 
+
+## [下载APK体验](https://www.pgyer.com/WZbg)
+![image](https://www.pgyer.com/app/qrcode/WZbg)
+
+### 效果图
+
+![image](https://github.com/jielkko/LPhotoPreview/blob/master/demo/1.jpg)
+
+![image](https://github.com/jielkko/LPhotoPreview/blob/master/demo/2.jpg)
+
+![image](https://github.com/jielkko/LPhotoPreview/blob/master/demo/g1.gif)
+
 ### 引入
 Step 1. Add the JitPack repository to your build file Add it in your root build.gradle at the end of repositories:
 ```gradle
