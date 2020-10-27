@@ -10,11 +10,11 @@
 
 ### 效果图
 
-![image](https://github.com/jielkko/LPhotoPreview/blob/master/demo/1.jpg)
+![功能](https://github.com/jielkko/LPhotoPreview/blob/master/demo/1.jpg)
 
-![image](https://github.com/jielkko/LPhotoPreview/blob/master/demo/2.jpg)
+![功能](https://github.com/jielkko/LPhotoPreview/blob/master/demo/2.jpg)
 
-![image](https://github.com/jielkko/LPhotoPreview/blob/master/demo/g1.gif)
+![功能](https://github.com/jielkko/LPhotoPreview/blob/master/demo/g1.gif)
 
 ### 引入
 Step 1. Add the JitPack repository to your build file Add it in your root build.gradle at the end of repositories:
