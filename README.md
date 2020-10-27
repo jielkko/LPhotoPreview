@@ -17,7 +17,7 @@
 ![功能](https://github.com/jielkko/LPhotoPreview/blob/master/demo/g1.gif)
 
 ### 引入
-Step 1. Add the JitPack repository to your build file Add it in your root build.gradle at the end of repositories:
+1.在 build.gradle 添加 JitPack
 ```gradle
 	allprojects {
 		repositories {
@@ -26,7 +26,7 @@ Step 1. Add the JitPack repository to your build file Add it in your root build.
 		}
 	}
 ```
-Step 2. Add the dependency
+2. 在 dependency 添加
 ```gradle
 	dependencies {
 	       implementation 'com.github.jielkko:LPhotoPreview:1.0'
@@ -63,7 +63,7 @@ Step 2. Add the dependency
                         .setImageView(mToutiaoImage)
                         .show();
 ```
-       
+
 仿微信预览 LPhotoPicker.WEIXIN
 ```java
   public ArrayList<LPhotoModel> list = new ArrayList<>();
@@ -96,4 +96,3 @@ Step 2. Add the dependency
             }
         });
 ```
-     
