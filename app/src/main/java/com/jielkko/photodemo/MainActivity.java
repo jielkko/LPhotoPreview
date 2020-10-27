@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     int index = 0;  //显示第几张
-    public ArrayList<LPhotoModel> mData = new ArrayList<>();
+    public ArrayList<LPhotoModel> list = new ArrayList<>();
     public MainPhotoAdapter mAdapter;
 
     @Override
@@ -51,14 +51,14 @@ public class MainActivity extends AppCompatActivity {
 
 
         index = 1;
-//        mData.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603091533219&di=0304262e58607b481a60b9a40a6baf94&imgtype=0&src=http%3A%2F%2Fa3.att.hudong.com%2F14%2F75%2F01300000164186121366756803686.jpg");
-//        mData.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603553477282&di=3366b05ae90556941ac88e67153e8d77&imgtype=0&src=http%3A%2F%2Fa3.att.hudong.com%2F64%2F52%2F01300000407527124482522224765.jpg");
-//        mData.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603603448114&di=e9dc4c075b1e9b89160faf6c146e9fbe&imgtype=0&src=http%3A%2F%2Fa0.att.hudong.com%2F56%2F12%2F01300000164151121576126282411.jpg");
+//        list.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603091533219&di=0304262e58607b481a60b9a40a6baf94&imgtype=0&src=http%3A%2F%2Fa3.att.hudong.com%2F14%2F75%2F01300000164186121366756803686.jpg");
+//        list.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603553477282&di=3366b05ae90556941ac88e67153e8d77&imgtype=0&src=http%3A%2F%2Fa3.att.hudong.com%2F64%2F52%2F01300000407527124482522224765.jpg");
+//        list.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603603448114&di=e9dc4c075b1e9b89160faf6c146e9fbe&imgtype=0&src=http%3A%2F%2Fa0.att.hudong.com%2F56%2F12%2F01300000164151121576126282411.jpg");
 
 
-        mData.add(new LPhotoModel(url));
-        mData.add(new LPhotoModel(R.drawable.test1));
-        mData.add(new LPhotoModel(R.drawable.test2));
+        list.add(new LPhotoModel(url));
+        list.add(new LPhotoModel(R.drawable.test1));
+        list.add(new LPhotoModel(R.drawable.test2));
 
 
         Glide.with(this).load(url).into(mToutiaoImage);
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                         .builder(mActivity)
                         .setMultiMode(LPhotoPicker.TOUXIAO) //默认头条 LPhotoPicker.TOUXIAO
                         .setPage(0) //默认0 是第一页
-                        .setImageList(mData) //图片列表
+                        .setImageList(list) //图片列表
                         .setImageView(mToutiaoImage)
                         .show();
 
@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                         .builder(mActivity)
                         .setMultiMode(LPhotoPicker.WEIXIN) //默认头条 LPhotoPicker.TOUXIAO
                         .setPage(0) //默认0 是第一页
-                        .setImageList(mData) //图片列表
+                        .setImageList(list) //图片列表
                         .setImageView(mWeixinImage)
                         .show();
             }
@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
         GridLayoutManager mLayoutManager = new GridLayoutManager(mContext, 3);
         mRecyclerView.setLayoutManager(mLayoutManager);
 
-        mAdapter = new MainPhotoAdapter(mContext, mData);
+        mAdapter = new MainPhotoAdapter(mContext, list);
         mRecyclerView.setAdapter(mAdapter);
         ((DefaultItemAnimator) mRecyclerView.getItemAnimator()).setSupportsChangeAnimations(false);// 取消动画效果
         mRecyclerView.setHasFixedSize(true);
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
                         .builder(mActivity)
                         .setMultiMode(LPhotoPicker.TOUXIAO) //默认头条 LPhotoPicker.TOUXIAO
                         .setPage(position) //默认0 是第一页
-                        .setImageList(mData) //图片列表
+                        .setImageList(list) //图片列表
                         .setImageView((ImageView) view)
                         .show();
 

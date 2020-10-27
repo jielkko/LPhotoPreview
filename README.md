@@ -59,7 +59,7 @@
                         .builder(mActivity)
                         .setMultiMode(LPhotoPicker.TOUXIAO) //默认头条 LPhotoPicker.TOUXIAO
                         .setPage(0) //默认0 是第一页
-                        .setImageList(mData) //图片列表
+                        .setImageList(list) //图片列表
                         .setImageView(mToutiaoImage)
                         .show();
 ```
@@ -73,7 +73,7 @@
                         .builder(mActivity)
                         .setMultiMode(LPhotoPicker.WEIXIN) //默认头条 LPhotoPicker.TOUXIAO
                         .setPage(0) //默认0 是第一页
-                        .setImageList(mData) //图片列表
+                        .setImageList(list) //图片列表
                         .setImageView(mToutiaoImage)
                         .show();
 ```                 
@@ -88,7 +88,7 @@
                         .builder(mActivity)
                         .setMultiMode(LPhotoPicker.TOUXIAO) //默认头条 LPhotoPicker.TOUXIAO
                         .setPage(position) //默认0 是第一页
-                        .setImageList(mData) //图片列表
+                        .setImageList(list) //图片列表
                         .setImageView((ImageView) view)
                         .show();
 
